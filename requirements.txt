@@ -1,0 +1,21 @@
+streamlit>=1.28.0
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.57.0
+peft==0.17.0
+qwen-vl-utils
+accelerate>=0.25.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+pillow>=9.0.0
+bitsandbytes>=0.41.0
+
+# 📹 Camera and Video Processing (新增)
+opencv-python>=4.8.0
+numpy>=1.21.0
+
+# Optional: for real-time voice input (uncomment if needed)
+# websocket-client>=1.6.0
+
+# Legacy: click-to-record voice input (alternative)
+# streamlit-mic-recorder

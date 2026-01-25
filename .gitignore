@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Models and large files
+models/
+*.safetensors
+*.bin
+*.ckpt
+*.pth
+Qwen2.5-VL-RESCUED_1024.zip
+Qwen2.5-VL-URIS-Final-LoRA/*.safetensors
+
+# Cache
+.cache/
+*.cache
+~/.cache/
+
+# User data
+user_profile.json
+test_videos/
+*.mp4
+*.avi
+*.mov
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+tmp*.mp4
+test_recording_*.mp4
+
+# Logs
+*.log
