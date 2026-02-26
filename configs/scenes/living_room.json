@@ -1,0 +1,39 @@
+{
+  "room": "living_room",
+  "notes": "Default demo scene for living-room assistance and furniture reposition tasks.",
+  "objects": [
+    {
+      "name": "chair",
+      "zone": "left",
+      "state": "idle",
+      "attributes": {
+        "movable": true,
+        "material": "wood"
+      }
+    },
+    {
+      "name": "table",
+      "zone": "center",
+      "state": "set",
+      "attributes": {
+        "surface": "occupied"
+      }
+    },
+    {
+      "name": "cup",
+      "zone": "table",
+      "state": "dirty",
+      "attributes": {
+        "breakable": true
+      }
+    },
+    {
+      "name": "napkins",
+      "zone": "table",
+      "state": "available",
+      "attributes": {
+        "consumable": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "room": "bedroom",
+  "notes": "Bedroom organization scenario for tidying and item retrieval.",
+  "objects": [
+    {
+      "name": "blanket",
+      "zone": "bed",
+      "state": "messy",
+      "attributes": {
+        "foldable": true
+      }
+    },
+    {
+      "name": "book",
+      "zone": "desk",
+      "state": "open",
+      "attributes": {
+        "movable": true
+      }
+    },
+    {
+      "name": "lamp",
+      "zone": "nightstand",
+      "state": "on",
+      "attributes": {
+        "switchable": true
+      }
+    },
+    {
+      "name": "slippers",
+      "zone": "floor",
+      "state": "misplaced",
+      "attributes": {
+        "pair": true
+      }
+    }
+  ]
+}

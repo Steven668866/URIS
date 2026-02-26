@@ -1,0 +1,15 @@
+[server]
+headless = true
+runOnSave = true
+
+[theme]
+base = "light"
+primaryColor = "#0D7F7A"
+backgroundColor = "#F6F1E8"
+secondaryBackgroundColor = "#EEE7DB"
+textColor = "#162426"
+
+[theme.sidebar]
+backgroundColor = "#EDE5D7"
+secondaryBackgroundColor = "#F5F0E6"
+textColor = "#162426"

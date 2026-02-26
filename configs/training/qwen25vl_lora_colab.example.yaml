@@ -1,0 +1,51 @@
+### URIS Qwen2.5-VL LoRA (LLaMA-Factory) example config
+### This is a template. Field names may vary slightly across LLaMA-Factory versions.
+
+### model
+model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
+trust_remote_code: true
+image_max_pixels: 262144
+video_max_pixels: 16384
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.05
+quantization_bit: 4
+
+### dataset
+dataset_dir: /content/drive/MyDrive/URIS/train_data/llamafactory
+dataset: uris_vlm_train
+template: qwen2_vl
+cutoff_len: 4096
+overwrite_cache: true
+preprocessing_num_workers: 4
+
+### output
+output_dir: /content/drive/MyDrive/URIS/checkpoints/Qwen2.5-VL-URIS-LoRA-v2
+logging_steps: 10
+save_steps: 200
+save_total_limit: 2
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+dataloader_num_workers: 2
+
+### eval (optional)
+# do_eval: true
+# eval_dataset: uris_vlm_val
+# per_device_eval_batch_size: 1
+# eval_strategy: steps
+# eval_steps: 200

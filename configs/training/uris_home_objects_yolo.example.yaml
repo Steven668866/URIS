@@ -1,0 +1,22 @@
+# URIS Home Objects (YOLO) dataset config example
+# Copy to your Drive and edit paths/classes.
+# Reference: Ultralytics YOLO dataset YAML format.
+
+path: /content/drive/MyDrive/URIS/datasets/yolo_home_objects_v1
+train: images/train
+val: images/val
+# test: images/test  # optional
+
+# Number of classes
+nc: 8
+
+# Class names should align with your object registry aliases in URIS.
+names:
+  0: cup
+  1: chair
+  2: table
+  3: bottle
+  4: tissue
+  5: remote
+  6: book
+  7: trash_bin

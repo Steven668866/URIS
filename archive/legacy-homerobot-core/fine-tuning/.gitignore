@@ -1,0 +1,40 @@
+# Environment variables (contains API keys)
+.env
+
+# Generated datasets
+dataset_*.json
+*.jsonl
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+
+
+
+
+

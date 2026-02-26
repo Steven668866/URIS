@@ -1,0 +1,39 @@
+{
+  "room": "kitchen",
+  "notes": "Kitchen prep scenario for fetch and cleanup commands.",
+  "objects": [
+    {
+      "name": "plate",
+      "zone": "counter",
+      "state": "dirty",
+      "attributes": {
+        "breakable": true
+      }
+    },
+    {
+      "name": "knife",
+      "zone": "counter",
+      "state": "idle",
+      "attributes": {
+        "sharp": true,
+        "safety_required": true
+      }
+    },
+    {
+      "name": "pan",
+      "zone": "stove",
+      "state": "warm",
+      "attributes": {
+        "heat_source": "stove"
+      }
+    },
+    {
+      "name": "trash_bin",
+      "zone": "corner",
+      "state": "half_full",
+      "attributes": {
+        "movable": false
+      }
+    }
+  ]
+}
